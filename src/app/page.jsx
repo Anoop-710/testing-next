@@ -9,11 +9,11 @@ import Hero from "../components/Hero";
 import Courses from "../components/Courses";
 import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
-
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <div className="fixed right-4 top-48 flex flex-col gap-4 z-10">
+      <div className="hidden md:flex flex-col gap-4 fixed right-4 top-48 z-10">
         <Image
           src={fb}
           alt="facebook"
@@ -40,6 +40,7 @@ export default function Home() {
       <Courses />
       <Features />
       <Testimonials />
+      <Footer />
     </>
   );
 }
