@@ -1,16 +1,18 @@
 import Image from "next/image";
-// import Landing from "../../components/Landing";
+
 import fb from "../../public/assets/fb.png";
 import linkedin from "../../public/assets/linkedin_logo.png";
 import insta from "../../public/assets/ig.png";
 import youtube from "../../public/assets/youtube_logo.png";
 import Landing from "../components/Landing";
-import Hero from "@/components/Hero";
+import Hero from "../components/Hero";
+import Courses from "../components/Courses";
+import Features from "@/components/Features";
 
 export default function Home() {
   return (
     <>
-      <div className="fixed right-4 top-48 flex flex-col gap-4">
+      <div className="fixed right-4 top-48 flex flex-col gap-4 z-10">
         <Image
           src={fb}
           alt="facebook"
@@ -34,6 +36,8 @@ export default function Home() {
       </div>
       <Landing />
       <Hero />
+      <Courses />
+      <Features />
     </>
   );
 }
