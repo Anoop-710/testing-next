@@ -5,6 +5,7 @@ import linkedin from "../../public/assets/linkedin_logo.png";
 import insta from "../../public/assets/ig.png";
 import youtube from "../../public/assets/youtube_logo.png";
 import Landing from "../components/Landing";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         />
       </div>
       <Landing />
+      <Hero />
     </>
   );
 }
