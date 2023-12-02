@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Logo from "../public/assets/iqslogo.jpg";
+import Logo from "../../public/assets/iqslogo.jpg";
 import Image from "next/image";
 import Dropdown from "./Dropdown";
-import Register from "../public/assets/register.jpg";
+import Register from "../../public/assets/register.jpg";
 
 function Landing() {
   const navigation = [

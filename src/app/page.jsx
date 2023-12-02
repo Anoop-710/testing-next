@@ -4,7 +4,7 @@ import fb from "../../public/assets/fb.png";
 import linkedin from "../../public/assets/linkedin_logo.png";
 import insta from "../../public/assets/ig.png";
 import youtube from "../../public/assets/youtube_logo.png";
-import Landing from "../../components/Landing";
+import Landing from "../components/Landing";
 
 export default function Home() {
   return (

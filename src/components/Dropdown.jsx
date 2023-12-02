@@ -3,10 +3,10 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-import Java from "../public/assets/java.jpeg";
-import Python from "../public/assets/python.jpeg";
-import DataScience from "../public/assets/data_science.jpeg";
-import Devops from "../public/assets/devops.png";
+import Java from "../../public/assets/java.jpeg";
+import Python from "../../public/assets/python.jpeg";
+import DataScience from "../../public/assets/data_science.jpeg";
+import Devops from "../../public/assets/devops.png";
 import Image from "next/image";
 
 function classNames(...classes) {
