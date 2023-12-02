@@ -2,22 +2,27 @@
 import React from "react";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
-// import people from "../const";
-// import kousalya from "../public/assets/kousalya.jpeg";
 
 import Chinna from "../../public/assets/Testimonials/Chinna.png";
 import ChinnaCompany from "../../public/assets/Testimonials/Chinna_Company.jpeg";
-// import r360 from "../../public/assets/r360.jpg";
-// import Suhas from "../../public/assets/suhas.jpeg";
-// import adp from "../../public/assets/adpsuhas.png";
-// import seetesh from "../../public/assets/seetesh.jpeg";
-// import neosoft from "../../public/assets/neosoft.jpg";
-// import umesh from "../../public/assets/umesh.jpeg";
-// import mantralabs from "../../public/assets/umeshmantra.png";
-// import sangeeta from "../../public/assets/sangeeta.jpeg";
-// import optimum from "../../public/assets/optimum.jpg";
-// import yajna from "../../public/assets/yajnadutta.jpeg";
-// import template from "../../public/assets/template.png";
+import Mahesh_Kollu from "../../public/assets/Testimonials/Mahesh_Kollu.jpg";
+import MaheshKolluCompany from "../../public/assets/Testimonials/Mahesh_Kollu_Company.png";
+import Kiran from "../../public/assets/Testimonials/Kiran.jpg";
+import KiranCompany from "../../public/assets/Testimonials/Kiran_Company.jpg";
+import SaiLakshmi from "../../public/assets/Testimonials/SaiLakshmi.jpg";
+import SaiLakshmiCompany from "../../public/assets/Testimonials/SaiLakshmi_Company.jpg";
+import VengaiahAbburi from "../../public/assets/Testimonials/Vengaiah_Abburi.jpg";
+import VengaiahAbburiCompany from "../../public/assets/Testimonials/Vengaiah_Abburi_Company.jpg";
+import Sivalingappa from "../../public/assets/Testimonials/Sivalingappa.jpg";
+import SivalingappaCompany from "../../public/assets/Testimonials/Sivalingappa_Company.jpg";
+import ParasNaidu from "../../public/assets/Testimonials/Paras_Naidu.jpg";
+import ParasNaiduCompany from "../../public/assets/Testimonials/Paras_Naidu_Company.jpg";
+import Bharathi from "../../public/assets/Testimonials/Bharathi.jpg";
+import BharathiCompany from "../../public/assets/Testimonials/Bharathi_Company.jpeg";
+import Naresh from "../../public/assets/Testimonials/Naresh.jpg";
+import NareshCompany from "../../public/assets/Testimonials/Naresh_Company.jpeg";
+import Raj_Kumar from "../../public/assets/Testimonials/Raj_Kumar.jpg";
+import RajKumarCompany from "../../public/assets/Testimonials/Raj_Kumar_Company.jpg";
 
 const people = [
   {
@@ -29,60 +34,67 @@ const people = [
     companyUrl: ChinnaCompany,
   },
   {
-    name: "Chinna Veeraiah",
+    name: "Mahesh Kollu",
     title: "Sr. Software Engineer",
-    role: "Admin",
-    hike: "70% hike",
-    imageUrl: Chinna,
-    companyUrl: ChinnaCompany,
+    hike: "50% hike",
+    imageUrl: Mahesh_Kollu,
+    companyUrl: MaheshKolluCompany,
   },
   {
-    name: "Chinna Veeraiah",
+    name: "Kiran",
     title: "Sr. Software Engineer",
-    role: "Admin",
-    hike: "70% hike",
-    imageUrl: Chinna,
-    companyUrl: ChinnaCompany,
+    hike: "90% hike",
+    imageUrl: Kiran,
+    companyUrl: KiranCompany,
   },
   {
-    name: "Chinna Veeraiah",
+    name: "SaiLakshmi",
     title: "Sr. Software Engineer",
-    role: "Admin",
     hike: "70% hike",
-    imageUrl: Chinna,
-    companyUrl: ChinnaCompany,
+    imageUrl: SaiLakshmi,
+    companyUrl: SaiLakshmiCompany,
   },
   {
-    name: "Chinna Veeraiah",
-    title: "Sr. Software Engineer",
-    role: "Admin",
-    hike: "70% hike",
-    imageUrl: Chinna,
-    companyUrl: ChinnaCompany,
+    name: "Vengaiah Abburi",
+    title: "Associate Consultant",
+    hike: "85% hike",
+    imageUrl: VengaiahAbburi,
+    companyUrl: VengaiahAbburiCompany,
   },
   {
-    name: "Chinna Veeraiah",
-    title: "Sr. Software Engineer",
-    role: "Admin",
-    hike: "70% hike",
-    imageUrl: Chinna,
-    companyUrl: ChinnaCompany,
+    name: "Sivalingappa",
+    title: "Cloud Associate",
+    hike: "55% hike",
+    imageUrl: Sivalingappa,
+    companyUrl: SivalingappaCompany,
   },
   {
-    name: "Chinna Veeraiah",
-    title: "Sr. Software Engineer",
-    role: "Admin",
-    hike: "70% hike",
-    imageUrl: Chinna,
-    companyUrl: ChinnaCompany,
+    name: "Paras Naidu",
+    title: "S/W Software Engineer",
+    hike: "78% hike",
+    imageUrl: ParasNaidu,
+    companyUrl: ParasNaiduCompany,
   },
   {
-    name: "Chinna Veeraiah",
+    name: "Bharathi",
+    title: "Java Developer",
+    hike: "110% hike",
+    imageUrl: Bharathi,
+    companyUrl: BharathiCompany,
+  },
+  {
+    name: "Naresh",
     title: "Sr. Software Engineer",
-    role: "Admin",
     hike: "70% hike",
-    imageUrl: Chinna,
-    companyUrl: ChinnaCompany,
+    imageUrl: Naresh,
+    companyUrl: NareshCompany,
+  },
+  {
+    name: "Raj Kumar",
+    title: "Associate Engineer",
+    hike: "65% hike",
+    imageUrl: Raj_Kumar,
+    companyUrl: RajKumarCompany,
   },
 
   // More people...
@@ -145,7 +157,7 @@ function Testimonials() {
           class="flex items-center justify-center md:justify-start [&_img]:max-w-7xl animate-infinite-scroll"
         >
           {people.map((person) => (
-            <li key={person.email} className="card">
+            <li key={person.name} className="card">
               <div className="col-span-1 flex flex-col rounded-lg bg-white text-center shadow my-4 mx-2 p-4 w-56">
                 <Image
                   className="mx-auto h-28 w-28 flex-shrink-0 rounded-full"
