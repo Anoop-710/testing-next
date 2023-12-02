@@ -8,6 +8,7 @@ import Landing from "../components/Landing";
 import Hero from "../components/Hero";
 import Courses from "../components/Courses";
 import Features from "@/components/Features";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       <Hero />
       <Courses />
       <Features />
+      <Testimonials />
     </>
   );
 }
