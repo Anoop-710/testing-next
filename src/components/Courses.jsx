@@ -76,13 +76,13 @@ function Courses() {
           Full Stack Development | Data Science | Devops Engineer{" "}
         </h2>
 
-        <div className="bg-white backgr">
+        <div className="bg-white">
           <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8">
             <div className="mt-12 text-center space-y-4 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
               {tiers.map((tier) => (
                 <div
                   key={tier.name}
-                  className="divide-y divide-gray-200 rounded-lg border border-gray-200 shadow-sm"
+                  className="divide-y divide-gray-200 rounded-lg border border-purple-400 shadow-sm bg-indigo-200 "
                 >
                   <div className="p-2 mt-4">
                     <h2 className="text-lg font-medium leading-6 text-gray-900">

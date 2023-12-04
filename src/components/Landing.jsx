@@ -11,7 +11,7 @@ function Landing() {
   const navigation = [
     { name: "Home", href: "#" },
     { name: "Courses", href: "#" },
-    { name: "Placement Guarantee Program", href: "#" },
+    { name: "Placements", href: "#" },
     { name: "Careers", href: "#" },
     { name: "About Us", href: "#" },
     { name: "Contact", href: "#" },
@@ -56,7 +56,7 @@ function Landing() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12 text-xl">
+          <div className="hidden lg:flex lg:gap-x-12 text-lg">
             {navigation.map((item) => (
               <div key={item.name}>
                 <a
@@ -69,14 +69,6 @@ function Landing() {
                 {/* Render the dropdown component for 'About' */}
               </div>
             ))}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
           </div>
         </nav>
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -130,7 +122,7 @@ function Landing() {
         width={500}
         alt=""
       />
-      <div className="mx-auto bg-indigo-400 max-w-8xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 bg-darkblue-700 border rounded-md mt-4">
+      <div className="mx-auto bg-regeal-blue max-w-8xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 bg-darkblue-700 border rounded-md mt-4">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto mb-24 pl-16">
           <h1 className="max-w-lg text-4xl font-bold tracking-tight text-gray-200 sm:text-4xl">
             Rebalance your Tech Skills

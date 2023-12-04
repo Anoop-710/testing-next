@@ -16,6 +16,9 @@ module.exports = {
           to: { transform: "translateX(-100%)" },
         },
       },
+      colors: {
+        "regeal-blue": "#004aad",
+      },
     },
   },
   plugins: [],
