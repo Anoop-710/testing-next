@@ -29,8 +29,8 @@ import Sangita from "../../public/assets/Testimonials/Sangita.jpg";
 import SangitaCompany from "../../public/assets/Testimonials/Sangita_Company.jpeg";
 import Maddini from "../../public/assets/Testimonials/Maddini_Kousalya.jpg";
 import MaddiniCompany from "../../public/assets/Testimonials/Maddini_Kousalya_Company.jpg";
-import Yajna from "../../public/assets/Testimonials/Yajna.jpg";
-import YajnaCompany from "../../public/assets/Testimonials/Yajna_Company.png";
+// import Yajna from "../../public/assets/Testimonials/Yajna.jpg";
+// import YajnaCompany from "../../public/assets/Testimonials/Yajna_Company.png";
 import Suhas from "../../public/assets/Testimonials/Suhas.jpg";
 import SuhasCompany from "../../public/assets/Testimonials/Suhas_Company.png";
 import Umesh from "../../public/assets/Testimonials/Umesh.jpg";
@@ -190,13 +190,13 @@ const people = [
     imageUrl: Maddini,
     companyUrl: MaddiniCompany,
   },
-  {
-    name: "Yajna Dutta Biswal",
-    title: "Sr. Software Engineer",
-    hike: "70% hike",
-    imageUrl: Yajna,
-    companyUrl: YajnaCompany,
-  },
+  // {
+  //   name: "Yajna Dutta Biswal",
+  //   title: "Sr. Software Engineer",
+  //   hike: "70% hike",
+  //   imageUrl: Yajna,
+  //   companyUrl: YajnaCompany,
+  // },
   {
     name: "Suhas HS",
     title: "Associate Consultant",
