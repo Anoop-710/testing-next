@@ -8,10 +8,15 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "infinite-scroll": "infinite-scroll 25s linear infinite",
+        "infinite-scroll": "infinite-scroll 20s linear infinite",
+        "infinite-scroll-slow": "infinite-scroll 90s linear infinite",
       },
       keyframes: {
         "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+        "infinite-scroll-slow": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },

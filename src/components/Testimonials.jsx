@@ -23,6 +23,79 @@ import Naresh from "../../public/assets/Testimonials/Naresh.jpg";
 import NareshCompany from "../../public/assets/Testimonials/Naresh_Company.jpeg";
 import Raj_Kumar from "../../public/assets/Testimonials/Raj_Kumar.jpg";
 import RajKumarCompany from "../../public/assets/Testimonials/Raj_Kumar_Company.jpg";
+import Seetes from "../../public/assets/Testimonials/Seetes.jpg";
+import SeetesCompany from "../../public/assets/Testimonials/Seetes_Company.jpg";
+import Sangita from "../../public/assets/Testimonials/Sangita.jpg";
+import SangitaCompany from "../../public/assets/Testimonials/Sangita_Company.jpeg";
+import Maddini from "../../public/assets/Testimonials/Maddini_Kousalya.jpg";
+import MaddiniCompany from "../../public/assets/Testimonials/Maddini_Kousalya_Company.jpg";
+import Yajna from "../../public/assets/Testimonials/Yajna.jpg";
+import YajnaCompany from "../../public/assets/Testimonials/Yajna_Company.png";
+import Suhas from "../../public/assets/Testimonials/Suhas.jpg";
+import SuhasCompany from "../../public/assets/Testimonials/Suhas_Company.png";
+import Umesh from "../../public/assets/Testimonials/Umesh.jpg";
+import UmeshCompany from "../../public/assets/Testimonials/Umesh_Company.png";
+import Kankanala from "../../public/assets/Testimonials/Kankanala.jpg";
+import KankanalaCompany from "../../public/assets/Testimonials/Kankanala_Company.png";
+import SaiYelika from "../../public/assets/Testimonials/Sai_Yelika.jpg";
+import SaiYelikaCompany from "../../public/assets/Testimonials/Sai_Yelika_Company.jpg";
+import SaiKumar from "../../public/assets/Testimonials/Sai_Kumar.jpg";
+import SaiKumarCompany from "../../public/assets/Testimonials/Sai_Kumar_Company.jpg";
+import VaraLakshmi from "../../public/assets/Testimonials/Vara_Lakshmi.jpg";
+import VaraLakshmiCompany from "../../public/assets/Testimonials/Vara_Lakshmi_Company.jpg";
+// import Teja from "../../public/assets/Testimonials/Teja.jpg";
+// import TejaCompany from "../../public/assets/Testimonials/Teja_Company.png";
+import Shantanu from "../../public/assets/Testimonials/Shantanu.jpg";
+import ShantanuCompany from "../../public/assets/Testimonials/Shantanu_Company.jpeg";
+import Ravi from "../../public/assets/Testimonials/Ravi.jpg";
+import RaviCompany from "../../public/assets/Testimonials/Ravi_Company.jpg";
+import Milind from "../../public/assets/Testimonials/Milind.jpg";
+import MilindCompany from "../../public/assets/Testimonials/Milind_Company.png";
+
+import Hemant from "../../public/assets/Testimonials/Hemant.jpg";
+import HemantCompany from "../../public/assets/Testimonials/Hemant_Company.jpg";
+import Akbar from "../../public/assets/Testimonials/Akbar.jpg";
+import AkbarCompany from "../../public/assets/Testimonials/Akbar_Company.jpg";
+import Sai from "../../public/assets/Testimonials/Sai.jpg";
+import SaiCompany from "../../public/assets/Testimonials/Sai_Company.jpg";
+import Ashok from "../../public/assets/Testimonials/Ashok.jpg";
+import AshokCompany from "../../public/assets/Testimonials/Ashok_Company.jpg";
+import Firoz from "../../public/assets/Testimonials/Firoz.jpg";
+import FirozCompany from "../../public/assets/Testimonials/Firoz_Company.jpg";
+import Akhil from "../../public/assets/Testimonials/Akhil.jpg";
+import AkhilCompany from "../../public/assets/Testimonials/Akhil_Company.jpg";
+import Ramesh from "../../public/assets/Testimonials/Ramesh_Varma.jpg";
+import RameshCompany from "../../public/assets/Testimonials/Ramesh_Varma_Company.jpg";
+import Suresh from "../../public/assets/Testimonials/Suresh.jpg";
+import SureshCompany from "../../public/assets/Testimonials/Suresh_Company.jpg";
+import Nagendra from "../../public/assets/Testimonials/Nagendra.jpg";
+import NagendraCompany from "../../public/assets/Testimonials/Nagendra_Company.jpg";
+import Akhil2 from "../../public/assets/Testimonials/Akhil2.jpg";
+import Akhil2Company from "../../public/assets/Testimonials/Akhil2_Company.jpg";
+import Pramod from "../../public/assets/Testimonials/Pramod.jpg";
+import PramodCompany from "../../public/assets/Testimonials/Pramod_Company.jpg";
+import Venkat from "../../public/assets/Testimonials/Venkat.jpg";
+import VenkatCompany from "../../public/assets/Testimonials/Venkat_Company.jpg";
+import Tanmay from "../../public/assets/Testimonials/Tanmay.jpg";
+import TanmayCompany from "../../public/assets/Testimonials/Tanmay_Company.jpg";
+import Mukesh from "../../public/assets/Testimonials/Mukesh.jpg";
+import MukeshCompany from "../../public/assets/Testimonials/Mukesh_Company.jpg";
+import Shrikanth from "../../public/assets/Testimonials/Shrikanth.jpg";
+import ShrikanthCompany from "../../public/assets/Testimonials/Shrikanth_Company.jpg";
+import Ashok2 from "../../public/assets/Testimonials/Ashok2.jpg";
+import Ashok2Company from "../../public/assets/Testimonials/Ashok2_Company.jpg";
+import Mizra from "../../public/assets/Testimonials/Mizra.jpg";
+import MizraCompany from "../../public/assets/Testimonials/Mirza_Company.jpg";
+import Gayathri from "../../public/assets/Testimonials/Gayathri.jpg";
+import GayathriCompany from "../../public/assets/Testimonials/Gayathri_Company.jpg";
+import Katari from "../../public/assets/Testimonials/Katari.jpg";
+import KatariCompany from "../../public/assets/Testimonials/Katari_Company.jpg";
+import Raghu from "../../public/assets/Testimonials/Raghu.jpg";
+import RaghuCompany from "../../public/assets/Testimonials/Raghu_Company.jpg";
+import Jagananth from "../../public/assets/Testimonials/Jagananth.jpg";
+import JagananthCompany from "../../public/assets/Testimonials/Jagananth_Company.jpg";
+import Bindu from "../../public/assets/Testimonials/Bindu.jpg";
+import BinduCompany from "../../public/assets/Testimonials/Bindu_Company.jpg";
 
 const people = [
   {
@@ -96,6 +169,297 @@ const people = [
     imageUrl: Raj_Kumar,
     companyUrl: RajKumarCompany,
   },
+  {
+    name: "Seetes Kumar Mallik",
+    title: "Sr. Software Engineer",
+    hike: "88% hike",
+    imageUrl: Seetes,
+    companyUrl: SeetesCompany,
+  },
+  {
+    name: "Sushree sangita swan",
+    title: "Sr. Software Engineer",
+    hike: "65% hike",
+    imageUrl: Sangita,
+    companyUrl: SangitaCompany,
+  },
+  {
+    name: "Maddini Kousalya",
+    title: "Sr. Software Engineer",
+    hike: "90% hike",
+    imageUrl: Maddini,
+    companyUrl: MaddiniCompany,
+  },
+  {
+    name: "Yajna Dutta Biswal",
+    title: "Sr. Software Engineer",
+    hike: "70% hike",
+    imageUrl: Yajna,
+    companyUrl: YajnaCompany,
+  },
+  {
+    name: "Suhas HS",
+    title: "Associate Consultant",
+    hike: "50% hike",
+    imageUrl: Suhas,
+    companyUrl: SuhasCompany,
+  },
+  {
+    name: "Umesh",
+    title: "Sr. Software Engineer",
+    hike: "120% hike",
+    imageUrl: Umesh,
+    companyUrl: UmeshCompany,
+  },
+  {
+    name: "Kankanala Dwarakesh",
+    title: "Cloud Associate",
+    hike: "100% hike",
+    imageUrl: Kankanala,
+    companyUrl: KankanalaCompany,
+  },
+  {
+    name: "Sai Yelika",
+    title: "Sr. Software Engineer",
+    hike: "80% hike",
+    imageUrl: SaiYelika,
+    companyUrl: SaiYelikaCompany,
+  },
+  {
+    name: "Sai Kumar",
+    title: "Trainee Engineer",
+    hike: "50% hike",
+    imageUrl: SaiKumar,
+    companyUrl: SaiKumarCompany,
+  },
+  {
+    name: "Vara Lakshmi",
+    title: "Trainee Engineer",
+    hike: "60% hike",
+    imageUrl: VaraLakshmi,
+    companyUrl: VaraLakshmiCompany,
+  },
+  // {
+  //   name: "Teja Kumar",
+  //   title: "Sr. Software Engineer",
+  //   hike: "80% hike",
+  //   imageUrl: Teja,
+  //   companyUrl: TejaCompany,
+  // },
+  {
+    name: "Naresh",
+    title: "Sr. Software Engineer",
+    hike: "70% hike",
+    imageUrl: Naresh,
+    companyUrl: NareshCompany,
+  },
+  {
+    name: "Shantanu",
+    title: "Software Engineer",
+    hike: "50% hike",
+    imageUrl: Shantanu,
+    companyUrl: ShantanuCompany,
+  },
+  // Ravi
+  {
+    name: "Ravi",
+    title: "Software Engineer",
+    hike: "120% hike",
+    imageUrl: Ravi,
+    companyUrl: RaviCompany,
+  },
+  // Milind
+  {
+    name: "Milind",
+    title: "Software Engineer",
+    hike: "60% hike",
+    imageUrl: Milind,
+    companyUrl: MilindCompany,
+  },
+  // Kiran
+  {
+    name: "Kiran",
+    title: "S/W Engineer",
+    hike: "78% hike",
+    imageUrl: Kiran,
+    companyUrl: KiranCompany,
+  },
+  // Hemant
+  {
+    name: "Hemant",
+    title: "Sr. Engineer",
+    hike: "90% hike",
+    imageUrl: Hemant,
+    companyUrl: HemantCompany,
+  },
+  // Akbar
+  {
+    name: "Akbar",
+    title: "Software Engineer",
+    hike: "55% hike",
+    imageUrl: Akbar,
+    companyUrl: AkbarCompany,
+  },
+  // Sai
+  {
+    name: "Sai",
+    title: "Sr. Software Engineer",
+    hike: "70% hike",
+    imageUrl: Sai,
+    companyUrl: SaiCompany,
+  },
+  // Ashok
+  {
+    name: "Ashok",
+    title: "Software Engineer",
+    hike: "100% hike",
+    imageUrl: Ashok,
+    companyUrl: AshokCompany,
+  },
+  // Firoz
+  {
+    name: "Firoz",
+    title: "Software Engineer",
+    hike: "80% hike",
+    imageUrl: Firoz,
+    companyUrl: FirozCompany,
+  },
+  // Akhil
+  {
+    name: "Akhil",
+    title: "Sr. Software Engineer",
+    hike: "65% hike",
+    imageUrl: Akhil,
+    companyUrl: AkhilCompany,
+  },
+  // Ramesh
+  {
+    name: "Ramesh Varma",
+    title: "Sr. Software Engineer",
+    hike: "110% hike",
+    imageUrl: Ramesh,
+    companyUrl: RameshCompany,
+  },
+  // Suresh
+  {
+    name: "Suresh",
+    title: "Java Developer",
+    hike: "70% hike",
+    imageUrl: Suresh,
+    companyUrl: SureshCompany,
+  },
+  // Nagendra
+  {
+    name: "Nagendra",
+    title: "Trainee Engineer",
+    hike: "50% hike",
+    imageUrl: Nagendra,
+    companyUrl: NagendraCompany,
+  },
+  // Akhil
+  {
+    name: "Akhil",
+    title: "S/W Engineer",
+    hike: "65% hike",
+    imageUrl: Akhil2,
+    companyUrl: Akhil2Company,
+  },
+  // Pramod
+  {
+    name: "Pramod Kumar",
+    title: "Sr. Software Engineer",
+    hike: "80% hike",
+    imageUrl: Pramod,
+    companyUrl: PramodCompany,
+  },
+  // Venkat
+  {
+    name: "Venkat Krishna",
+    title: "Software Engineer",
+    hike: "140% hike",
+    imageUrl: Venkat,
+    companyUrl: VenkatCompany,
+  },
+  // Tanmay
+  {
+    name: "Tanmay",
+    title: "Sr. Software Engineer",
+    hike: "90% hike",
+    imageUrl: Tanmay,
+    companyUrl: TanmayCompany,
+  },
+  // Mukesh
+  {
+    name: "Mukesh",
+    title: "Sr. Software Engineer",
+    hike: "70% hike",
+    imageUrl: Mukesh,
+    companyUrl: MukeshCompany,
+  },
+  // Srikanth
+  {
+    name: "Srikanth",
+    title: "Sr. Software Engineer",
+    hike: "95% hike",
+    imageUrl: Shrikanth,
+    companyUrl: ShrikanthCompany,
+  },
+  // Ashok
+  {
+    name: "Ashok",
+    title: "Sr. Software Engineer",
+    hike: "60% hike",
+    imageUrl: Ashok2,
+    companyUrl: Ashok2Company,
+  },
+  // Mizra
+  {
+    name: "Mizra",
+    title: "Trainee Engineer",
+    hike: "65% hike",
+    imageUrl: Mizra,
+    companyUrl: MizraCompany,
+  },
+  // Gayathri
+  {
+    name: "Gayathri",
+    title: "Trainee Engineer",
+    hike: "50% hike",
+    imageUrl: Gayathri,
+    companyUrl: GayathriCompany,
+  },
+  //Katari
+  {
+    name: "Katari Venkatesh",
+    title: "Software Engineer",
+    hike: "80% hike",
+    imageUrl: Katari,
+    companyUrl: KatariCompany,
+  },
+  // Raghu
+  {
+    name: "Raghu",
+    title: "S/W Engineer",
+    hike: "100% hike",
+    imageUrl: Raghu,
+    companyUrl: RaghuCompany,
+  },
+  // Jaganath
+  {
+    name: "Jaganath",
+    title: "Software Engineer",
+    hike: "70% hike",
+    imageUrl: Jagananth,
+    companyUrl: JagananthCompany,
+  },
+  // Bindu
+  {
+    name: "Bindu",
+    title: "Software Engineer",
+    hike: "90% hike",
+    imageUrl: Bindu,
+    companyUrl: BinduCompany,
+  },
 
   // More people...
 ];
@@ -118,7 +482,7 @@ function Testimonials() {
       >
         <ul
           x-ref="logos"
-          class="flex items-center justify-center md:justify-start [&_img]:max-w-7xl animate-infinite-scroll"
+          class="flex items-center justify-center md:justify-start [&_img]:max-w-7xl animate-infinite-scroll-slow"
         >
           {people.map((person) => (
             <li key={person.name} className="card">
@@ -154,7 +518,7 @@ function Testimonials() {
         {/* Repeat the same set of card components for infinite scroll effect */}
         <ul
           x-ref="logos"
-          class="flex items-center justify-center md:justify-start [&_img]:max-w-7xl animate-infinite-scroll"
+          class="flex items-center justify-center md:justify-start [&_img]:max-w-7xl animate-infinite-scroll-slow"
         >
           {people.map((person) => (
             <li key={person.name} className="card">
