@@ -146,7 +146,7 @@ function Landing() {
           </div>
         </div>
         <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-          <iframe
+          {/* <iframe
             className="w-full h-auto lg:h-[400px] lg:w-[600px]"
             width="700"
             height="500"
@@ -155,9 +155,9 @@ function Landing() {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share a"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
 
-          {/*<div className="bg-white p-6 rounded-lg shadow-lg shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] w-full max-w-md mx-auto">
+          <div className="bg-white p-6 rounded-lg shadow-lg shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] w-full max-w-md mx-auto">
             <h2 className="text-2xl font-bold mb-10 text-purple-800 text-center">
               Register here
             </h2>
@@ -179,14 +179,14 @@ function Landing() {
               />
               <select className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400">
                 <option>SELECT QUALIFICATION</option>
-                {/* Add options here *
+
                 <option value="BE / B.Tech / MCA">BE / B.Tech / MCA</option>
                 <option value="BSC">BCA, BSc, B.com, BBA</option>
                 <option value="Others">Others</option>
               </select>
               <select className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400">
                 <option>SELECT YEAR OF PASSING</option>
-                {/* Add options here 
+
                 <option value="others">2023</option>
                 <option value="Others">2022</option>
                 <option value="Others">2021</option>
@@ -196,7 +196,7 @@ function Landing() {
                 Enroll Now
               </button>
             </form>
-          </div>*/}
+          </div>
         </div>
       </div>
     </div>
