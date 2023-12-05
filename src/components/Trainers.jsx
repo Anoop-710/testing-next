@@ -1,18 +1,18 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import IqsLogo from "../public/assets/iqslogo.jpg";
-import Akhil from "../public/assets/akhil2.jpg";
-import Venk from "../public/assets/venk2.jpeg";
-import Bala from "../public/assets/bala.jpeg";
-import TechMahindra from "../public/assets/techMahindra.png";
-import HCL from "../public/assets/hcl.png";
-import TCS from "../public/assets/tcs.png";
-import Mindtree from "../public/assets/mindtree.jpg";
-import Wipro from "../public/assets/wipro.jpg";
-import Mphasis from "../public/assets/mphasis.jpg";
-import IndiqSoft from "../public/assets/indiqsoft.jpg";
-import Nischita from "../public/assets/Nischita.jpeg";
+import IqsLogo from "../../public/assets/iqslogo.jpg";
+import Akhil from "../../public/assets/akhil2.jpg";
+import Venk from "../../public/assets/venk2.jpeg";
+import Bala from "../../public/assets/bala.jpeg";
+import TechMahindra from "../../public/assets/techMahindra.png";
+import HCL from "../../public/assets/hcl.png";
+import TCS from "../../public/assets/tcs.png";
+import Mindtree from "../../public/assets/mindtree.jpg";
+import Wipro from "../../public/assets/wipro.jpg";
+import Mphasis from "../../public/assets/mphasis.jpg";
+import IndiqSoft from "../../public/assets/indiqsoft.jpg";
+import Nischita from "../../public/assets/Nischita.jpeg";
 
 function Trainers() {
   return (

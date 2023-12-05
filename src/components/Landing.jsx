@@ -150,10 +150,9 @@ function Landing() {
             className="w-full h-auto lg:h-[400px] lg:w-[600px]"
             width="700"
             height="500"
-            src="https://www.youtube.com/embed/lncA5RvwvN8"
+            src="https://www.youtube.com/embed/lncA5RvwvN8?autoplay=1&mute=1"
             title="How Iqschool Helped to Crack an Interview | Dream Job | Iqschool"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share a"
+            allow="autoplay; encrypted-media"
             allowfullscreen
           ></iframe>
 
