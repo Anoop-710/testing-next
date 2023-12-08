@@ -228,14 +228,14 @@ const people = [
   {
     name: "Sai Kumar",
     title: "Trainee Engineer",
-    hike: "50% hike",
+    hike: "Fresher",
     imageUrl: SaiKumar,
     companyUrl: SaiKumarCompany,
   },
   {
     name: "Vara Lakshmi",
     title: "Trainee Engineer",
-    hike: "60% hike",
+    hike: "Fresher",
     imageUrl: VaraLakshmi,
     companyUrl: VaraLakshmiCompany,
   },
@@ -256,7 +256,7 @@ const people = [
   {
     name: "Shantanu",
     title: "Software Engineer",
-    hike: "50% hike",
+    hike: "Fresher",
     imageUrl: Shantanu,
     companyUrl: ShantanuCompany,
   },
@@ -287,7 +287,7 @@ const people = [
   // Hemant
   {
     name: "Hemant",
-    title: "Sr. Engineer",
+    title: "Sr. Software Engineer",
     hike: "90% hike",
     imageUrl: Hemant,
     companyUrl: HemantCompany,
@@ -344,7 +344,7 @@ const people = [
   {
     name: "Suresh",
     title: "Java Developer",
-    hike: "70% hike",
+    hike: "Fresher",
     imageUrl: Suresh,
     companyUrl: SureshCompany,
   },
@@ -352,7 +352,7 @@ const people = [
   {
     name: "Nagendra",
     title: "Trainee Engineer",
-    hike: "50% hike",
+    hike: "Fresher",
     imageUrl: Nagendra,
     companyUrl: NagendraCompany,
   },
@@ -416,7 +416,7 @@ const people = [
   {
     name: "Mizra",
     title: "Trainee Engineer",
-    hike: "65% hike",
+    hike: "Fresher",
     imageUrl: Mizra,
     companyUrl: MizraCompany,
   },
@@ -424,7 +424,7 @@ const people = [
   {
     name: "Gayathri",
     title: "Trainee Engineer",
-    hike: "50% hike",
+    hike: "Fresher",
     imageUrl: Gayathri,
     companyUrl: GayathriCompany,
   },

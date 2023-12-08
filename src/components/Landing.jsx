@@ -8,6 +8,11 @@ import Dropdown from "./Dropdown";
 import Register from "../../public/assets/register.jpg";
 
 function Landing() {
+  const stats = [
+    { name: "Students placed", stat: "500+" },
+    { name: "Students upskilled", stat: "1500+" },
+    { name: "Workshops conducted ", stat: "300+" },
+  ];
   const navigation = [
     { name: "Home", href: "#" },
     { name: "Courses", href: "#" },
@@ -61,7 +66,7 @@ function Landing() {
               <div key={item.name}>
                 <a
                   href={item.href}
-                  className="text-md font-semibold leading-6 text-purple-500 hover:text-blue-500"
+                  className="text-md font-semibold leading-6 text-purple-800 hover:text-blue-500"
                 >
                   {item.name}
                 </a>
@@ -97,7 +102,7 @@ function Landing() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-purple-500 hover:text-blue-500"
+                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-purple-800 hover:text-blue-500"
                     >
                       {item.name}
                     </a>
@@ -123,7 +128,7 @@ function Landing() {
         alt=""
       />
       <div className="mx-auto bg-regeal-blue max-w-8xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 bg-darkblue-700 border rounded-md mt-4">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto mb-24 pl-16">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto  sm:pl-16 ">
           <h1 className="max-w-lg text-4xl font-bold tracking-tight text-gray-200 sm:text-4xl">
             Rebalance your Tech Skills
           </h1>
@@ -144,10 +149,30 @@ function Landing() {
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
+          <div>
+            <dl className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-3">
+              {stats.map((item, index) => (
+                <div
+                  key={index}
+                  className="overflow-hidden rounded-lg bg-gradient-to-r from-amber-300 to-amber-500 px-4 py-5 shadow sm:p-6"
+                >
+                  <dt className="truncate text-md font-medium text-gray-900">
+                    {item.name}
+                  </dt>
+                  <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">
+                    <Counter
+                      targetCount={parseInt(item.stat, 10)}
+                      duration={1000}
+                    />
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
-        <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+        <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow flex justify-center">
           <iframe
-            className="w-full h-auto lg:h-[400px] lg:w-[600px]"
+            className="w-full h-auto md:h-[400px] md:w-[600px] "
             width="700"
             height="500"
             src="https://www.youtube.com/embed/lncA5RvwvN8?autoplay=1&mute=1"
@@ -201,5 +226,22 @@ function Landing() {
     </div>
   );
 }
+const Counter = ({ targetCount, duration }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const interval = 50;
+    const steps = Math.ceil(targetCount / (duration / interval));
+
+    const timer = setInterval(() => {
+      setCount((prevCount) => {
+        const newCount = prevCount + steps;
+        return newCount >= targetCount ? targetCount : newCount;
+      });
+    }, interval);
+    return () => clearInterval(timer);
+  }, [targetCount, duration]);
+  return <div>{count}+</div>;
+};
 
 export default Landing;

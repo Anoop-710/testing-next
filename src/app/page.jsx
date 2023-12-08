@@ -11,6 +11,7 @@ import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import Trainers from "@/components/Trainers";
+import Testimonial from "@/components/Testimonial";
 export default function Home() {
   return (
     <>
@@ -41,6 +42,7 @@ export default function Home() {
       <Courses />
       <Features />
       <Testimonials />
+      <Testimonial />
       <Trainers />
       <Footer />
     </>
