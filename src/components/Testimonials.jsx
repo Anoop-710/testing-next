@@ -97,375 +97,374 @@ import JagananthCompany from "../../public/assets/Testimonials/Jagananth_Company
 import Bindu from "../../public/assets/Testimonials/Bindu.jpg";
 import BinduCompany from "../../public/assets/Testimonials/Bindu_Company.jpg";
 
-const people = [
-  {
-    name: "Chinna Veeraiah",
-    title: "Sr. Software Engineer",
-    role: "Admin",
-    hike: "70% hike",
-    imageUrl: Chinna,
-    companyUrl: ChinnaCompany,
-  },
-  {
-    name: "Mahesh Kollu",
-    title: "Sr. Software Engineer",
-    hike: "50% hike",
-    imageUrl: Mahesh_Kollu,
-    companyUrl: MaheshKolluCompany,
-  },
-  {
-    name: "Kiran",
-    title: "Sr. Software Engineer",
-    hike: "90% hike",
-    imageUrl: Kiran,
-    companyUrl: KiranCompany,
-  },
-  {
-    name: "SaiLakshmi",
-    title: "Sr. Software Engineer",
-    hike: "70% hike",
-    imageUrl: SaiLakshmi,
-    companyUrl: SaiLakshmiCompany,
-  },
-  {
-    name: "Vengaiah Abburi",
-    title: "Associate Consultant",
-    hike: "85% hike",
-    imageUrl: VengaiahAbburi,
-    companyUrl: VengaiahAbburiCompany,
-  },
-  {
-    name: "Sivalingappa",
-    title: "Cloud Associate",
-    hike: "55% hike",
-    imageUrl: Sivalingappa,
-    companyUrl: SivalingappaCompany,
-  },
-  {
-    name: "Paras Naidu",
-    title: "S/W Software Engineer",
-    hike: "78% hike",
-    imageUrl: ParasNaidu,
-    companyUrl: ParasNaiduCompany,
-  },
-  {
-    name: "Bharathi",
-    title: "Java Developer",
-    hike: "110% hike",
-    imageUrl: Bharathi,
-    companyUrl: BharathiCompany,
-  },
-  {
-    name: "Naresh",
-    title: "Sr. Software Engineer",
-    hike: "70% hike",
-    imageUrl: Naresh,
-    companyUrl: NareshCompany,
-  },
-  {
-    name: "Raj Kumar",
-    title: "Associate Engineer",
-    hike: "65% hike",
-    imageUrl: Raj_Kumar,
-    companyUrl: RajKumarCompany,
-  },
-  {
-    name: "Seetes Kumar Mallik",
-    title: "Sr. Software Engineer",
-    hike: "88% hike",
-    imageUrl: Seetes,
-    companyUrl: SeetesCompany,
-  },
-  {
-    name: "Sushree sangita swan",
-    title: "Sr. Software Engineer",
-    hike: "65% hike",
-    imageUrl: Sangita,
-    companyUrl: SangitaCompany,
-  },
-  {
-    name: "Maddini Kousalya",
-    title: "Sr. Software Engineer",
-    hike: "90% hike",
-    imageUrl: Maddini,
-    companyUrl: MaddiniCompany,
-  },
-  // {
-  //   name: "Yajna Dutta Biswal",
-  //   title: "Sr. Software Engineer",
-  //   hike: "70% hike",
-  //   imageUrl: Yajna,
-  //   companyUrl: YajnaCompany,
-  // },
-  {
-    name: "Suhas HS",
-    title: "Associate Consultant",
-    hike: "50% hike",
-    imageUrl: Suhas,
-    companyUrl: SuhasCompany,
-  },
-  {
-    name: "Umesh",
-    title: "Sr. Software Engineer",
-    hike: "120% hike",
-    imageUrl: Umesh,
-    companyUrl: UmeshCompany,
-  },
-  {
-    name: "Kankanala Dwarakesh",
-    title: "Cloud Associate",
-    hike: "100% hike",
-    imageUrl: Kankanala,
-    companyUrl: KankanalaCompany,
-  },
-  {
-    name: "Sai Yelika",
-    title: "Sr. Software Engineer",
-    hike: "80% hike",
-    imageUrl: SaiYelika,
-    companyUrl: SaiYelikaCompany,
-  },
-  {
-    name: "Sai Kumar",
-    title: "Trainee Engineer",
-    hike: "Fresher",
-    imageUrl: SaiKumar,
-    companyUrl: SaiKumarCompany,
-  },
-  {
-    name: "Vara Lakshmi",
-    title: "Trainee Engineer",
-    hike: "Fresher",
-    imageUrl: VaraLakshmi,
-    companyUrl: VaraLakshmiCompany,
-  },
-  // {
-  //   name: "Teja Kumar",
-  //   title: "Sr. Software Engineer",
-  //   hike: "80% hike",
-  //   imageUrl: Teja,
-  //   companyUrl: TejaCompany,
-  // },
-  {
-    name: "Naresh",
-    title: "Sr. Software Engineer",
-    hike: "70% hike",
-    imageUrl: Naresh,
-    companyUrl: NareshCompany,
-  },
-  {
-    name: "Shantanu",
-    title: "Software Engineer",
-    hike: "Fresher",
-    imageUrl: Shantanu,
-    companyUrl: ShantanuCompany,
-  },
-  // Ravi
-  {
-    name: "Ravi",
-    title: "Software Engineer",
-    hike: "120% hike",
-    imageUrl: Ravi,
-    companyUrl: RaviCompany,
-  },
-  // Milind
-  {
-    name: "Milind",
-    title: "Software Engineer",
-    hike: "60% hike",
-    imageUrl: Milind,
-    companyUrl: MilindCompany,
-  },
-  // Kiran
-  {
-    name: "Kiran",
-    title: "S/W Engineer",
-    hike: "78% hike",
-    imageUrl: Kiran,
-    companyUrl: KiranCompany,
-  },
-  // Hemant
-  {
-    name: "Hemant",
-    title: "Sr. Software Engineer",
-    hike: "90% hike",
-    imageUrl: Hemant,
-    companyUrl: HemantCompany,
-  },
-  // Akbar
-  {
-    name: "Akbar",
-    title: "Software Engineer",
-    hike: "55% hike",
-    imageUrl: Akbar,
-    companyUrl: AkbarCompany,
-  },
-  // Sai
-  {
-    name: "Sai",
-    title: "Sr. Software Engineer",
-    hike: "70% hike",
-    imageUrl: Sai,
-    companyUrl: SaiCompany,
-  },
-  // Ashok
-  {
-    name: "Ashok",
-    title: "Software Engineer",
-    hike: "100% hike",
-    imageUrl: Ashok,
-    companyUrl: AshokCompany,
-  },
-  // Firoz
-  {
-    name: "Firoz",
-    title: "Software Engineer",
-    hike: "80% hike",
-    imageUrl: Firoz,
-    companyUrl: FirozCompany,
-  },
-  // Akhil
-  {
-    name: "Akhil",
-    title: "Sr. Software Engineer",
-    hike: "65% hike",
-    imageUrl: Akhil,
-    companyUrl: AkhilCompany,
-  },
-  // Ramesh
-  {
-    name: "Ramesh Varma",
-    title: "Sr. Software Engineer",
-    hike: "110% hike",
-    imageUrl: Ramesh,
-    companyUrl: RameshCompany,
-  },
-  // Suresh
-  {
-    name: "Suresh",
-    title: "Java Developer",
-    hike: "Fresher",
-    imageUrl: Suresh,
-    companyUrl: SureshCompany,
-  },
-  // Nagendra
-  {
-    name: "Nagendra",
-    title: "Trainee Engineer",
-    hike: "Fresher",
-    imageUrl: Nagendra,
-    companyUrl: NagendraCompany,
-  },
-  // Akhil
-  {
-    name: "Akhil",
-    title: "S/W Engineer",
-    hike: "65% hike",
-    imageUrl: Akhil2,
-    companyUrl: Akhil2Company,
-  },
-  // Pramod
-  {
-    name: "Pramod Kumar",
-    title: "Sr. Software Engineer",
-    hike: "80% hike",
-    imageUrl: Pramod,
-    companyUrl: PramodCompany,
-  },
-  // Venkat
-  {
-    name: "Venkat Krishna",
-    title: "Software Engineer",
-    hike: "140% hike",
-    imageUrl: Venkat,
-    companyUrl: VenkatCompany,
-  },
-  // Tanmay
-  {
-    name: "Tanmay",
-    title: "Sr. Software Engineer",
-    hike: "90% hike",
-    imageUrl: Tanmay,
-    companyUrl: TanmayCompany,
-  },
-  // Mukesh
-  {
-    name: "Mukesh",
-    title: "Sr. Software Engineer",
-    hike: "70% hike",
-    imageUrl: Mukesh,
-    companyUrl: MukeshCompany,
-  },
-  // Srikanth
-  {
-    name: "Srikanth",
-    title: "Sr. Software Engineer",
-    hike: "95% hike",
-    imageUrl: Shrikanth,
-    companyUrl: ShrikanthCompany,
-  },
-  // Ashok
-  {
-    name: "Ashok",
-    title: "Sr. Software Engineer",
-    hike: "60% hike",
-    imageUrl: Ashok2,
-    companyUrl: Ashok2Company,
-  },
-  // Mizra
-  {
-    name: "Mizra",
-    title: "Trainee Engineer",
-    hike: "Fresher",
-    imageUrl: Mizra,
-    companyUrl: MizraCompany,
-  },
-  // Gayathri
-  {
-    name: "Gayathri",
-    title: "Trainee Engineer",
-    hike: "Fresher",
-    imageUrl: Gayathri,
-    companyUrl: GayathriCompany,
-  },
-  //Katari
-  {
-    name: "Katari Venkatesh",
-    title: "Software Engineer",
-    hike: "80% hike",
-    imageUrl: Katari,
-    companyUrl: KatariCompany,
-  },
-  // Raghu
-  {
-    name: "Raghu",
-    title: "S/W Engineer",
-    hike: "100% hike",
-    imageUrl: Raghu,
-    companyUrl: RaghuCompany,
-  },
-  // Jaganath
-  {
-    name: "Jaganath",
-    title: "Software Engineer",
-    hike: "70% hike",
-    imageUrl: Jagananth,
-    companyUrl: JagananthCompany,
-  },
-  // Bindu
-  {
-    name: "Bindu",
-    title: "Software Engineer",
-    hike: "90% hike",
-    imageUrl: Bindu,
-    companyUrl: BinduCompany,
-  },
-
-  // More people...
-];
-
 // const [name, title, role, hike, imageUrl, companyUrl] = people;
 function Testimonials() {
+  const people = [
+    {
+      name: "Chinna Veeraiah",
+      title: "Sr. Software Engineer",
+      role: "Admin",
+      hike: "70% hike",
+      imageUrl: Chinna,
+      companyUrl: ChinnaCompany,
+    },
+    {
+      name: "Mahesh Kollu",
+      title: "Sr. Software Engineer",
+      hike: "50% hike",
+      imageUrl: Mahesh_Kollu,
+      companyUrl: MaheshKolluCompany,
+    },
+    {
+      name: "Kiran",
+      title: "Sr. Software Engineer",
+      hike: "90% hike",
+      imageUrl: Kiran,
+      companyUrl: KiranCompany,
+    },
+    {
+      name: "Sai Lakshmi",
+      title: "Sr. Software Engineer",
+      hike: "70% hike",
+      imageUrl: SaiLakshmi,
+      companyUrl: SaiLakshmiCompany,
+    },
+    {
+      name: "Vengaiah Abburi",
+      title: "Associate Consultant",
+      hike: "85% hike",
+      imageUrl: VengaiahAbburi,
+      companyUrl: VengaiahAbburiCompany,
+    },
+    {
+      name: "Sivalingappa",
+      title: "Cloud Associate",
+      hike: "55% hike",
+      imageUrl: Sivalingappa,
+      companyUrl: SivalingappaCompany,
+    },
+    {
+      name: "Paras Naidu",
+      title: "S/W Software Engineer",
+      hike: "78% hike",
+      imageUrl: ParasNaidu,
+      companyUrl: ParasNaiduCompany,
+    },
+    {
+      name: "Bharathi",
+      title: "Java Developer",
+      hike: "110% hike",
+      imageUrl: Bharathi,
+      companyUrl: BharathiCompany,
+    },
+    {
+      name: "Naresh",
+      title: "Sr. Software Engineer",
+      hike: "70% hike",
+      imageUrl: Naresh,
+      companyUrl: NareshCompany,
+    },
+    {
+      name: "Raj Kumar",
+      title: "Associate Engineer",
+      hike: "65% hike",
+      imageUrl: Raj_Kumar,
+      companyUrl: RajKumarCompany,
+    },
+    {
+      name: "Seetes Kumar Mallik",
+      title: "Sr. Software Engineer",
+      hike: "88% hike",
+      imageUrl: Seetes,
+      companyUrl: SeetesCompany,
+    },
+    {
+      name: "Sushree sangita swan",
+      title: "Sr. Software Engineer",
+      hike: "65% hike",
+      imageUrl: Sangita,
+      companyUrl: SangitaCompany,
+    },
+    {
+      name: "Maddini Kousalya",
+      title: "Sr. Software Engineer",
+      hike: "90% hike",
+      imageUrl: Maddini,
+      companyUrl: MaddiniCompany,
+    },
+    // {
+    //   name: "Yajna Dutta Biswal",
+    //   title: "Sr. Software Engineer",
+    //   hike: "70% hike",
+    //   imageUrl: Yajna,
+    //   companyUrl: YajnaCompany,
+    // },
+    {
+      name: "Suhas HS",
+      title: "Associate Consultant",
+      hike: "50% hike",
+      imageUrl: Suhas,
+      companyUrl: SuhasCompany,
+    },
+    {
+      name: "Umesh",
+      title: "Sr. Software Engineer",
+      hike: "120% hike",
+      imageUrl: Umesh,
+      companyUrl: UmeshCompany,
+    },
+    {
+      name: "Kankanala Dwarakesh",
+      title: "Cloud Associate",
+      hike: "100% hike",
+      imageUrl: Kankanala,
+      companyUrl: KankanalaCompany,
+    },
+    {
+      name: "Sai Yelika",
+      title: "Sr. Software Engineer",
+      hike: "80% hike",
+      imageUrl: SaiYelika,
+      companyUrl: SaiYelikaCompany,
+    },
+    {
+      name: "Sai Kumar",
+      title: "Trainee Engineer",
+      hike: "Fresher",
+      imageUrl: SaiKumar,
+      companyUrl: SaiKumarCompany,
+    },
+    {
+      name: "Vara Lakshmi",
+      title: "Trainee Engineer",
+      hike: "Fresher",
+      imageUrl: VaraLakshmi,
+      companyUrl: VaraLakshmiCompany,
+    },
+    // {
+    //   name: "Teja Kumar",
+    //   title: "Sr. Software Engineer",
+    //   hike: "80% hike",
+    //   imageUrl: Teja,
+    //   companyUrl: TejaCompany,
+    // },
+    {
+      name: "Naresh",
+      title: "Sr. Software Engineer",
+      hike: "70% hike",
+      imageUrl: Naresh,
+      companyUrl: NareshCompany,
+    },
+    {
+      name: "Shantanu",
+      title: "Software Engineer",
+      hike: "Fresher",
+      imageUrl: Shantanu,
+      companyUrl: ShantanuCompany,
+    },
+    // Ravi
+    {
+      name: "Ravi",
+      title: "Software Engineer",
+      hike: "120% hike",
+      imageUrl: Ravi,
+      companyUrl: RaviCompany,
+    },
+    // Milind
+    {
+      name: "Milind",
+      title: "Software Engineer",
+      hike: "60% hike",
+      imageUrl: Milind,
+      companyUrl: MilindCompany,
+    },
+    // Kiran
+    {
+      name: "Kiran",
+      title: "S/W Engineer",
+      hike: "78% hike",
+      imageUrl: Kiran,
+      companyUrl: KiranCompany,
+    },
+    // Hemant
+    {
+      name: "Hemant",
+      title: "Sr. Software Engineer",
+      hike: "90% hike",
+      imageUrl: Hemant,
+      companyUrl: HemantCompany,
+    },
+    // Akbar
+    {
+      name: "Akbar",
+      title: "Software Engineer",
+      hike: "55% hike",
+      imageUrl: Akbar,
+      companyUrl: AkbarCompany,
+    },
+    // Sai
+    {
+      name: "Sai",
+      title: "Sr. Software Engineer",
+      hike: "70% hike",
+      imageUrl: Sai,
+      companyUrl: SaiCompany,
+    },
+    // Ashok
+    {
+      name: "Ashok",
+      title: "Software Engineer",
+      hike: "100% hike",
+      imageUrl: Ashok,
+      companyUrl: AshokCompany,
+    },
+    // Firoz
+    {
+      name: "Firoz",
+      title: "Software Engineer",
+      hike: "80% hike",
+      imageUrl: Firoz,
+      companyUrl: FirozCompany,
+    },
+    // Akhil
+    {
+      name: "Akhil",
+      title: "Sr. Software Engineer",
+      hike: "65% hike",
+      imageUrl: Akhil,
+      companyUrl: AkhilCompany,
+    },
+    // Ramesh
+    {
+      name: "Ramesh Varma",
+      title: "Sr. Software Engineer",
+      hike: "110% hike",
+      imageUrl: Ramesh,
+      companyUrl: RameshCompany,
+    },
+    // Suresh
+    {
+      name: "Suresh",
+      title: "Java Developer",
+      hike: "Fresher",
+      imageUrl: Suresh,
+      companyUrl: SureshCompany,
+    },
+    // Nagendra
+    {
+      name: "Nagendra",
+      title: "Trainee Engineer",
+      hike: "Fresher",
+      imageUrl: Nagendra,
+      companyUrl: NagendraCompany,
+    },
+    // Akhil
+    {
+      name: "Akhil",
+      title: "S/W Engineer",
+      hike: "65% hike",
+      imageUrl: Akhil2,
+      companyUrl: Akhil2Company,
+    },
+    // Pramod
+    {
+      name: "Pramod Kumar",
+      title: "Sr. Software Engineer",
+      hike: "80% hike",
+      imageUrl: Pramod,
+      companyUrl: PramodCompany,
+    },
+    // Venkat
+    {
+      name: "Venkat Krishna",
+      title: "Software Engineer",
+      hike: "140% hike",
+      imageUrl: Venkat,
+      companyUrl: VenkatCompany,
+    },
+    // Tanmay
+    {
+      name: "Tanmay",
+      title: "Sr. Software Engineer",
+      hike: "90% hike",
+      imageUrl: Tanmay,
+      companyUrl: TanmayCompany,
+    },
+    // Mukesh
+    {
+      name: "Mukesh",
+      title: "Sr. Software Engineer",
+      hike: "70% hike",
+      imageUrl: Mukesh,
+      companyUrl: MukeshCompany,
+    },
+    // Srikanth
+    {
+      name: "Srikanth",
+      title: "Sr. Software Engineer",
+      hike: "95% hike",
+      imageUrl: Shrikanth,
+      companyUrl: ShrikanthCompany,
+    },
+    // Ashok
+    {
+      name: "Ashok",
+      title: "Sr. Software Engineer",
+      hike: "60% hike",
+      imageUrl: Ashok2,
+      companyUrl: Ashok2Company,
+    },
+    // Mizra
+    {
+      name: "Mizra",
+      title: "Trainee Engineer",
+      hike: "Fresher",
+      imageUrl: Mizra,
+      companyUrl: MizraCompany,
+    },
+    // Gayathri
+    {
+      name: "Gayathri",
+      title: "Trainee Engineer",
+      hike: "Fresher",
+      imageUrl: Gayathri,
+      companyUrl: GayathriCompany,
+    },
+    //Katari
+    {
+      name: "Katari Venkatesh",
+      title: "Software Engineer",
+      hike: "80% hike",
+      imageUrl: Katari,
+      companyUrl: KatariCompany,
+    },
+    // Raghu
+    {
+      name: "Raghu",
+      title: "S/W Engineer",
+      hike: "100% hike",
+      imageUrl: Raghu,
+      companyUrl: RaghuCompany,
+    },
+    // Jaganath
+    {
+      name: "Jaganath",
+      title: "Software Engineer",
+      hike: "70% hike",
+      imageUrl: Jagananth,
+      companyUrl: JagananthCompany,
+    },
+    // Bindu
+    {
+      name: "Bindu",
+      title: "Software Engineer",
+      hike: "90% hike",
+      imageUrl: Bindu,
+      companyUrl: BinduCompany,
+    },
+
+    // More people...
+  ];
   return (
     <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-[540px]">
       <div className="text-center text-4xl font-bold text-purple-300 mt-24 pt-12">
