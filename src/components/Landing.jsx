@@ -178,49 +178,7 @@ function Landing() {
             src="https://www.youtube.com/embed/lncA5RvwvN8?autoplay=1&mute=1"
             title="How Iqschool Helped to Crack an Interview | Dream Job | Iqschool"
             allow="autoplay; encrypted-media"
-            allowfullscreen
           ></iframe>
-
-          {/*<div className="bg-white p-6 rounded-lg shadow-lg shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] w-full max-w-md mx-auto">
-            <h2 className="text-2xl font-bold mb-10 text-purple-800 text-center">
-              Register here
-            </h2>
-            <form>
-              <input
-                className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400"
-                type="text"
-                placeholder="Enter your Name"
-              />
-              <input
-                className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400"
-                type="email"
-                placeholder="Enter your Email Id"
-              />
-              <input
-                className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400"
-                type="tel"
-                placeholder="Enter your Mobile Number"
-              />
-              <select className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400">
-                <option>SELECT QUALIFICATION</option>
-                {/* Add options here *
-                <option value="BE / B.Tech / MCA">BE / B.Tech / MCA</option>
-                <option value="BSC">BCA, BSc, B.com, BBA</option>
-                <option value="Others">Others</option>
-              </select>
-              <select className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400">
-                <option>SELECT YEAR OF PASSING</option>
-                {/* Add options here 
-                <option value="others">2023</option>
-                <option value="Others">2022</option>
-                <option value="Others">2021</option>
-                <option value="Others">Others</option>
-              </select>
-              <button className="bg-purple-600 text-white w-full py-2 rounded-md">
-                Enroll Now
-              </button>
-            </form>
-          </div>*/}
         </div>
       </div>
     </div>
