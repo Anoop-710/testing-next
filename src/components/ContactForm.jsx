@@ -50,7 +50,7 @@ const ContactForm = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] w-full max-w-md mx-auto">
       <h2 className="text-2xl font-bold mb-10 text-purple-800 text-center">
-        Register here
+        Register for free
       </h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="fulname"></label>

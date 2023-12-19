@@ -12,7 +12,7 @@ import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import Trainers from "@/components/Trainers";
 import Testimonial from "@/components/Testimonial";
-import ContactForm from "@/components/ContactForm";
+
 export default function Home() {
   return (
     <>
@@ -44,7 +44,7 @@ export default function Home() {
       <Features />
       <Testimonials />
       <Testimonial />
-      <ContactForm />
+
       <Trainers />
       <Footer />
     </>
