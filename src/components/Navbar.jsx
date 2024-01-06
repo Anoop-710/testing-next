@@ -5,20 +5,23 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../../public/assets/iqslogo.jpg";
 import Image from "next/image";
 import Dropdown from "./Dropdown";
-import Register from "../../public/assets/register.jpg";
 import Link from "next/link";
 
 const Navbar = () => {
   const navigation = [
     { name: "Home", href: "../home" },
     { name: "Courses", href: "/#courses" },
-    { name: "Placements", href: "/#placements" },
+    { name: "Placements", href: "/#testimonials" },
     { name: "Internship", href: "../internship" },
     { name: "About Us", href: "/#about" },
     { name: "Contact", href: "../contact" },
   ];
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
   return (
     <div className="px-6 pt-6 lg:px-8 ">
       <nav className="flex items-center justify-between" aria-label="Global">
@@ -78,6 +81,7 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     href={item.href}
+                    onClick={closeMobileMenu}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-purple-800 hover:text-blue-500"
                   >
                     {item.name}

@@ -3,7 +3,14 @@ import { db } from "../app/firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 import React, { useState } from "react";
 
-async function addDataToFirestore(name, email, mobile, qualification, year) {
+async function addDataToFirestore(
+  name,
+  email,
+  mobile,
+  qualification,
+  year,
+  course
+) {
   try {
     const docRef = await addDoc(collection(db, "messages"), {
       name: name,
@@ -11,6 +18,7 @@ async function addDataToFirestore(name, email, mobile, qualification, year) {
       mobile: mobile,
       qualification: qualification,
       year: year,
+      course: course,
     });
     console.log("Document written with ID: ", docRef.id);
     return true;
@@ -25,6 +33,7 @@ const ContactForm = () => {
   const [mobile, setMobile] = useState("");
   const [qualification, setQualification] = useState("");
   const [year, setYear] = useState("");
+  const [course, setCourse] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,7 +42,8 @@ const ContactForm = () => {
       email,
       mobile,
       qualification,
-      year
+      year,
+      course
     );
     if (added) {
       setFullname("");
@@ -41,6 +51,7 @@ const ContactForm = () => {
       setMobile("");
       setQualification("");
       setYear("");
+      setCourse("");
 
       alert("Your message has been sent successfully!");
     } else {
@@ -106,6 +117,24 @@ const ContactForm = () => {
           <option value="2022">2022</option>
           <option value="2021">2021</option>
           <option value="Others">Others</option>
+        </select>
+
+        <label htmlFor="course"></label>
+        <select
+          className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400"
+          id="course"
+          onChange={(e) => setCourse(e.target.value)}
+        >
+          <option>SELECT COURSE</option>
+          <option value="Web Development">Web Development</option>
+          <option value="MERN Stack">MERN Stack</option>
+          <option value="Java">Java Programming</option>
+          <option value="Python">Python Programming</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Devops">Devops</option>
+          <option value="Data Analytics">Data Analytics</option>
+          <option value="Internship">Internship</option>
+          <option value="Others"></option>
         </select>
         <button
           className="bg-purple-600 text-white w-full py-2 rounded-md"
