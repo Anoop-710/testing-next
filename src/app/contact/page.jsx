@@ -1,5 +1,4 @@
 "use client";
-
 import { useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,6 +8,8 @@ import img1 from "./images.png";
 import img2 from "./yellow-question-mark.jpg";
 import img3 from "./qu.jpg";
 import img4 from "./question_marks_background.jpg";
+import { db } from "../firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
 
 const FaqsCard = (props) => {
   const answerElRef = useRef();
@@ -76,6 +77,39 @@ const FaqsCard = (props) => {
 };
 
 export default () => {
+  async function addDataToFirestore(name, email, mobile, message) {
+    try {
+      const docRef = await addDoc(collection(db, "contact"), {
+        name: name,
+        email: email,
+        mobile: mobile,
+        message: message,
+      });
+      console.log("Document written with ID: ", docRef.id);
+      return true;
+    } catch (e) {
+      console.error("Error adding document: ", e);
+      return false;
+    }
+  }
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const added = await addDataToFirestore(name, email, mobile, message);
+    if (added) {
+      setName("");
+      setEmail("");
+      setMobile("");
+      setMessage("");
+      alert("Your message has been sent successfully!");
+    } else {
+      alert("Something went wrong. Please try again later.");
+    }
+  };
   const faqsList = [
     {
       q: "Will I receive a certificate after completion of the course ?",
@@ -156,25 +190,37 @@ export default () => {
             </p>
           </div>
           <div className="mt-12 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 sm:rounded-xl">
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label className="font-medium">Full name</label>
+                <label className="font-medium" htmlFor="name">
+                  Full name
+                </label>
                 <input
                   type="text"
                   required
                   className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                  id="name"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
                 />
               </div>
               <div>
-                <label className="font-medium">Email</label>
+                <label className="font-medium" htmlFor="email">
+                  Email
+                </label>
                 <input
                   type="email"
                   required
                   className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                  id="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                 />
               </div>
               <div>
-                <label className="font-medium">Phone number</label>
+                <label className="font-medium" htmlFor="mobile">
+                  Phone number
+                </label>
                 <div className="relative mt-2">
                   <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
                     <select className="text-sm bg-transparent outline-none rounded-lg h-full">
@@ -186,14 +232,22 @@ export default () => {
                     placeholder="+91"
                     required
                     className="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    id="mobile"
+                    onChange={(e) => setMobile(e.target.value)}
+                    value={mobile}
                   />
                 </div>
               </div>
               <div>
-                <label className="font-medium">Message</label>
+                <label className="font-medium" htmlFor="message">
+                  Message
+                </label>
                 <textarea
                   required
                   className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                  id="message"
+                  onChange={(e) => setMessage(e.target.value)}
+                  value={message}
                 ></textarea>
               </div>
               <button className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-lg duration-150">

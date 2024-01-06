@@ -9,7 +9,10 @@ const Admission = () => {
     <div className="bg-gradient-to-r from-slate-200 to-slate-500 mt-4 border rounded-md sm:grid grid-cols-2 grid-rows-1 ">
       <div className="overflow-y-hidden">
         <div className="mx-auto container f-f-p px-4 xl:px-0 py-24">
-          <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-gray-900">
+          <h1
+            className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-gray-900"
+            id="contact-form"
+          >
             How it works?
           </h1>
           <div className="md:mt-24 f-f-p">

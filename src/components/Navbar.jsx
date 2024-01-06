@@ -11,10 +11,10 @@ import Link from "next/link";
 const Navbar = () => {
   const navigation = [
     { name: "Home", href: "../home" },
-    { name: "Courses", href: "../courses" },
+    { name: "Courses", href: "/#courses" },
     { name: "Placements", href: "../placements" },
-    { name: "Careers", href: "../careers" },
-    { name: "About Us", href: "../about" },
+    { name: "Internship", href: "../internship" },
+    { name: "About Us", href: "/#about" },
     { name: "Contact", href: "../contact" },
   ];
 

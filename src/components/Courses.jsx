@@ -34,18 +34,19 @@ const tiers = [
     ],
   },
   {
-    name: "Data Science",
+    name: "Data Science Immersive Program",
     href: "#",
-    duration: "8 months",
-    priceMonthly: 32,
+    duration: "6 months",
+    priceTotal: 3000,
     description:
-      "Harness the Insights of Data, Excel in Analytics, and Transform Your Career with Data Science Excellence!",
+      "Dive deep into Data Science.Master key concepts, tools, and techniques for extracting insights from data.",
     includedFeatures: [
-      "Data Manipulation and Analysis ",
-      "Data visualization with Matplotlib and Seaborn",
-      "Machine Learning and Statistics",
-      "Data Science Tools and Projects",
-      "Mock Interviews",
+      "Foundations of Statistics and Probability",
+      "Data Cleaning and Preprocessing",
+      "Machine Learning Algorithms",
+      "Data Science Tools and Techniques",
+      "Data Visualization with Python and Tableau",
+      "Real-world Data Science Projects",
     ],
   },
   {
@@ -54,7 +55,7 @@ const tiers = [
     duration: "6 months",
     priceMonthly: 48,
     description:
-      " Streamline Operations, Automate Deployments, and Lead the Way to Seamless Software Delivery in DevOps!",
+      " Streamline Operations, Automate Deployments, and Lead the Way to Seamless Software Delivery!",
     includedFeatures: [
       "Version Control and CI/CD ",
       "Infrastructure as Code (IaC)",
@@ -63,22 +64,55 @@ const tiers = [
       "Mock Interviews",
     ],
   },
+  {
+    name: "Data Analytics",
+    href: "#",
+    duration: "6 months",
+    priceMonthly: 48,
+    description:
+      "Master Data Analytics using Python, Explore Insights from Data, and Enhance Decision-Making Skills!",
+    includedFeatures: [
+      "Data Exploration and Analysis with Python",
+      "Statistical Analysis and Visualization",
+      "Machine Learning Fundamentals",
+      "Big Data Analytics with tools like Spark",
+      "Mock Data Analytics Projects",
+    ],
+  },
+  {
+    name: "Tech Internship Program",
+    href: "#",
+    duration: "3 months",
+    stipend: "$1000 per month",
+    description:
+      "Join our Program to gain hands-on experience,and accelerate your career in the tech industry!",
+    includedFeatures: [
+      "Hands-on Project Assignments",
+      "Mentorship from Industry Professionals",
+      "Weekly Learning Sessions and Workshops",
+      "Networking Opportunities",
+      "Internship Completion Certificate",
+    ],
+  },
 ];
 
 function Courses() {
   return (
     <div>
       <div>
-        <h1 className="text-4xl text-center font-bold mb-8 mt-12 text-purple-600">
+        <h1
+          className="text-4xl text-center font-bold mb-8 mt-12 text-purple-600"
+          id="courses"
+        >
           Courses
         </h1>
         <h2 className="text-3xl text-center font-semibold mt-8 text-black">
-          Full Stack Development | Data Science | Devops Engineer{" "}
+          Full Stack Development | Data Science | DevOps | Internship
         </h2>
 
-        <div className="bg-white">
-          <div className="mx-auto max-w-7xl py-12 px-6 lg:px-8">
-            <div className="mt-12 text-center space-y-4 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
+        <div className="bg-gradient-to-r from-sky-500 to-blue-800 mt-10 ml-10 mr-10 border rounded-3xl">
+          <div className="mx-auto max-w-7xl pb-10 px-6 lg:px-8">
+            <div className="mt-12 text-center space-y-4 sm:mt-16 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-3">
               {tiers.map((tier) => (
                 <div
                   key={tier.name}
@@ -89,7 +123,7 @@ function Courses() {
                       {tier.name}
                     </h2>
                     <div
-                      className="w-44 mt-2 rounded-md flex itm justify-center text-center mx-auto"
+                      className="w-44 mt-2 rounded-md flex itm justify-center text-center mx-auto font-bold"
                       style={{
                         color: "#945FF6",
                         backgroundColor: "rgba(148, 95, 246, 0.15)",
@@ -99,7 +133,7 @@ function Courses() {
                         className="mt-1 mr-2"
                         stroke="currentColor"
                         fill="currentColor"
-                        stroke-width="0"
+                        strokeWidth="0"
                         viewBox="0 0 1024 1024"
                         height="1em"
                         width="1em"
@@ -110,7 +144,7 @@ function Courses() {
                       </svg>
                       Duration {tier.duration}
                     </div>
-                    <p className="mt-4 text-sm text-gray-500 font-semibold text-">
+                    <p className="mt-4 text-sm text-gray-800 font-semibold text-">
                       {tier.description}
                     </p>
                   </div>
@@ -125,7 +159,7 @@ function Courses() {
                             className="h-5 w-5 flex-shrink-0 text-green-500"
                             aria-hidden="true"
                           />
-                          <span className="text-sm text-gray-500 text-start">
+                          <span className="text-sm text-gray-700 text-start font-semibold">
                             {feature}
                           </span>
                         </li>

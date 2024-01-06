@@ -17,10 +17,10 @@ function Landing() {
   ];
   const navigation = [
     { name: "Home", href: "../home" },
-    { name: "Courses", href: "../courses" },
-    { name: "Placements", href: "../placements" },
-    { name: "Careers", href: "../careers" },
-    { name: "About Us", href: "../about" },
+    { name: "Courses", href: "/#courses" },
+    { name: "Placements", href: "/#testimonials" },
+    { name: "Internship", href: "../internship" },
+    { name: "About Us", href: "/#about" },
     { name: "Contact", href: "../contact" },
   ];
 
@@ -153,7 +153,7 @@ function Landing() {
         </div>
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
           <p className="text-sm leading-6 text-gray-900">
-            <strong className="font-semibold">GeneriCon 2023</strong>
+            <strong className="font-semibold">Batch 2024</strong>
             <svg
               viewBox="0 0 2 2"
               className="mx-2 inline h-0.5 w-0.5 fill-current"
@@ -161,14 +161,14 @@ function Landing() {
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
-            Join us in Denver from June 7 – 9 to see what’s coming next.
+            New batch starting soon, Click here to register for free
           </p>
-          <a
-            href="#"
+          <Link
+            href="/#contact-form"
             className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           >
             Register now <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
         <div className="flex flex-1 justify-end">
           <button
@@ -176,7 +176,6 @@ function Landing() {
             className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
           >
             <span className="sr-only">Dismiss</span>
-            <XMarkIcon className="h-5 w-5 text-gray-900" aria-hidden="true" />
           </button>
         </div>
       </div>

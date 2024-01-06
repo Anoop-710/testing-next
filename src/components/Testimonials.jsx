@@ -466,7 +466,10 @@ function Testimonials() {
     // More people...
   ];
   return (
-    <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-[540px]">
+    <div
+      className="bg-gradient-to-r from-purple-400 to-purple-600 h-[540px]"
+      id="testimonials"
+    >
       <div className="text-center text-4xl font-bold text-purple-300 mt-24 pt-12">
         Testimonials
       </div>
