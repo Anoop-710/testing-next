@@ -88,7 +88,10 @@ function Testimonial() {
   ];
 
   return (
-    <div className="pt-24 flex flex-col justify-center align-middle">
+    <div
+      className="pt-24 flex flex-col justify-center align-middle"
+      id="testimonials"
+    >
       <section className="relative py-14">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
           <div className="max-w-xl sm:text-center md:mx-auto">

@@ -5,13 +5,13 @@ import vectorLogo from "../../public/assets/vectorLogo.png";
 
 const navigation = {
   solutions: [
-    { name: "Courses", href: "#" },
-    { name: "Curriculum", href: "#" },
+    { name: "Courses", href: "/#courses" },
+    { name: "Curriculum", href: "/#courses" },
     { name: "Instructors", href: "#" },
     { name: "Insights", href: "#" },
   ],
   company: [
-    { name: "Privacy Policy", href: "#" },
+    { name: "Privacy Policy", href: "../policy" },
     { name: "Hire us", href: "#" },
     { name: "Guides", href: "#" },
     { name: "Become a mentor", href: "#" },
@@ -20,13 +20,13 @@ const navigation = {
     { name: "Blog", href: "#" },
     { name: "Jobs", href: "#" },
     { name: "Partners", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Contact", href: "../contact" },
   ],
   legal: [
     { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-    { name: "FAQ", href: "#" },
+    { name: "Privacy", href: "../policy" },
+    { name: "Terms", href: "../policy" },
+    { name: "FAQ", href: "../contact" },
   ],
   social: [
     {
