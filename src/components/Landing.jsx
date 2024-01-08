@@ -1,20 +1,15 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
-import Logo from "../../public/assets/iqslogo.jpg";
 import Image from "next/image";
-import Dropdown from "./Dropdown";
 import Register from "../../public/assets/register.jpg";
 import Link from "next/link";
 import Navbar from "./Navbar";
 
 function Landing() {
   const stats = [
-    { name: "Students placed", stat: "500+" },
-    { name: "Students upskilled", stat: "1500+" },
-    { name: "Workshops conducted ", stat: "300+" },
+    { name: "Students placed", stat: "1400+" },
+    { name: "Students upskilled", stat: "3500+" },
+    { name: "Workshops conducted ", stat: "700+" },
   ];
 
   const text = [
@@ -27,7 +22,7 @@ function Landing() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % text.length);
-    }, 1500);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
@@ -111,15 +106,18 @@ function Landing() {
             {text[currentIndex]}
           </h2>
           <div className="mt-10 flex items-center gap-x-6">
-            <a
-              href="#"
+            <Link
+              href="/#contact-form"
               className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-lg font-bold leading-7 text-gray-200 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Free Demo
-            </a>
-            <a href="#" className="text-lg font-bold leading-7 text-gray-100">
+            </Link>
+            <Link
+              href="/contact/#learn"
+              className="text-lg font-bold leading-7 text-gray-100"
+            >
               Learn more <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
           <div>
             <dl className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-3">
@@ -147,7 +145,7 @@ function Landing() {
             className="w-full h-auto md:h-[400px] md:w-[600px] "
             width="700"
             height="500"
-            src="https://www.youtube.com/embed/lncA5RvwvN8?autoplay=1&mute=1"
+            src="https://www.youtube.com/embed/lncA5RvwvN8?rel=0&autoplay=1"
             title="How Iqschool Helped to Crack an Interview | Dream Job | Iqschool"
             allow="autoplay; encrypted-media"
           ></iframe>

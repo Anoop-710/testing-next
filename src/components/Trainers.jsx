@@ -16,9 +16,9 @@ import Nischita from "../../public/assets/Nischita.jpeg";
 
 function Trainers() {
   return (
-    <div>
+    <div id="trainers">
       <h1 className="text-4xl mt-24 text-center font-bold bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">
-        Meet Our trainers
+        Meet Our Trainers
       </h1>
       <h2 className="text-xl text-center font-bold bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent">
         Learn from our Industrial experts

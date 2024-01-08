@@ -7,7 +7,7 @@ import HeroCards from "./HeroCards";
 import Admission from "./Admission";
 function Hero() {
   return (
-    <div className="w-full pt-12">
+    <div className="w-full pt-12" id="insights">
       <div>
         <h1 className="text-4xl  mt-2  bg-gradient-to-r from-violet-300 to-fuchsia-600  text-transparent bg-clip-text transition delay-2s50 duration-500 ease-in-out text-center">
           <b>100% Placement Guaranteed Program</b>
