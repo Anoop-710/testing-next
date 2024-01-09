@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { CheckIcon } from "@heroicons/react/20/solid";
-import Link from "next/link";
-const tiers = [
+import Modal from "./Modal";
+
+export const tiers = [
   {
     name: "Java Full Stack Development",
     href: "#",
@@ -104,6 +105,7 @@ const tiers = [
 function Courses() {
   return (
     <>
+      {/* <button onClick={<Modal />}>Click me</button> */}
       <div>
         <div>
           <h1
@@ -175,12 +177,10 @@ function Courses() {
                         ))}
                       </ul>
                     </div>
-                    <div>
-                      <Link href={tier.pdfLink} target="_blank">
-                        <button className="w-1/2 px-4 py-2 my-4 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                          Download brochure
-                        </button>
-                      </Link>
+                    <div key={tier.name}>
+                      <Modal
+                        onDownload={() => window.open(tier.pdfLink, "_blank")}
+                      />
                     </div>
                   </div>
                 ))}

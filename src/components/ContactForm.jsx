@@ -126,11 +126,13 @@ const ContactForm = () => {
           onChange={(e) => setCourse(e.target.value)}
         >
           <option>SELECT COURSE</option>
-          <option value="Web Development">Web Development</option>
-          <option value="MERN Stack">MERN Stack</option>
           <option value="Java">Java Programming</option>
           <option value="Python">Python Programming</option>
           <option value="Data Science">Data Science</option>
+          <option value="Web Development">Web Development - MERN</option>
+          <option value="App Development">
+            Data Structures and Algorithms
+          </option>
           <option value="Devops">Devops</option>
           <option value="Data Analytics">Data Analytics</option>
           <option value="Internship">Internship</option>
