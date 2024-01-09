@@ -220,6 +220,7 @@ const page = () => {
                 <Image
                   src={img}
                   className="absolute inset-0 h-full w-full object-cover"
+                  alt="image"
                 />
                 <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90" />
@@ -377,7 +378,7 @@ const page = () => {
         <h1 className="text-4xl text-center font-bold text-purple-600">
           PLACEMENT ASSISTANCE
         </h1>
-        <Image src={placement} />
+        <Image src={placement} alt="image" />
         {/* <Image src={placement2} /> */}
       </div>
 

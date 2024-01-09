@@ -489,7 +489,7 @@ function Testimonials() {
                 <Image
                   className="mx-auto h-28 w-28 flex-shrink-0 rounded-full"
                   src={person.imageUrl}
-                  alt=""
+                  alt="image"
                 />
                 <h3 className="text-md font-bold text-green-600">
                   {person.name}
@@ -502,6 +502,7 @@ function Testimonials() {
                   <Image
                     className="mx-auto h-16 w-16"
                     src={person.companyUrl}
+                    alt="image"
                   />
                 </dl>
                 <div className="flex items-center justify-center md:justify-center">
@@ -525,7 +526,7 @@ function Testimonials() {
                 <Image
                   className="mx-auto h-28 w-28 flex-shrink-0 rounded-full"
                   src={person.imageUrl}
-                  alt=""
+                  alt="image"
                 />
                 <h3 className="text-md font-bold text-green-600">
                   {person.name}
@@ -538,6 +539,7 @@ function Testimonials() {
                   <Image
                     className="mx-auto h-16 w-16"
                     src={person.companyUrl}
+                    alt="image"
                   />
                 </dl>
                 <div className="flex items-center justify-center md:justify-center">

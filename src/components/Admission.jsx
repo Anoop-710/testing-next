@@ -125,7 +125,7 @@ const Admission = () => {
               <Image
                 className="focus:outline-none rounded-full my-10 w-36 h-36"
                 src={Scholarship}
-                alt
+                alt="image"
                 width={0}
                 height={0}
               />
@@ -145,14 +145,14 @@ const Admission = () => {
               <Image
                 className="focus:outline-none rounded-full my-10 w-36 h-36"
                 src={Learning}
-                alt
+                alt="image"
                 width={0}
                 height={0}
               />
               <img
                 className
                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg6.svg"
-                alt
+                alt="image"
               />
               <div className="flex mt-10 flex-col items-center md:items-start md:w-8/12">
                 <h1 className="text-xl text-center tracking-wide leading-5 font-bold">

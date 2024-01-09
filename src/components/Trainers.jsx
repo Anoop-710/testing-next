@@ -38,12 +38,18 @@ function Trainers() {
               Akhil Meesala
             </h5>
             <h6 className="text-center text-bold text-xl">Founder</h6>
-            <Image src={IqsLogo} width={150} height={150} className="mx-auto" />
+            <Image
+              src={IqsLogo}
+              width={150}
+              height={150}
+              alt="image"
+              className="mx-auto"
+            />
             <hr />
             <div className="flex justify-between space-between h-12 mt-5 ">
-              <Image src={HCL} width={70} height={70} />
-              <Image src={TCS} width={70} height={70} />
-              <Image src={Mindtree} width={70} height={70} />
+              <Image src={HCL} width={70} height={70} alt="image" />
+              <Image src={TCS} width={70} height={70} alt="image" />
+              <Image src={Mindtree} width={70} height={70} alt="image" />
             </div>
           </div>
         </div>
@@ -61,11 +67,17 @@ function Trainers() {
               Venkatesh Meesala
             </h5>
             <h6 className="text-center text-bold text-xl">Managing Director</h6>
-            <Image src={IqsLogo} width={150} height={150} className="mx-auto" />
+            <Image
+              src={IqsLogo}
+              width={150}
+              height={150}
+              className="mx-auto"
+              alt="image"
+            />
             <hr />
             <div className="flex justify-evenly space-evenly h-12 mt-5 ">
-              <Image src={TCS} width={70} height={70} />
-              <Image src={Mindtree} width={70} height={70} />
+              <Image src={TCS} width={70} height={70} alt="image" />
+              <Image src={Mindtree} width={70} height={70} alt="image" />
             </div>
           </div>
         </div>
@@ -90,11 +102,12 @@ function Trainers() {
               width={150}
               height={150}
               className="mx-auto mt-4"
+              alt="image"
             />
             <hr />
             <div className="flex justify-evenly space-between h-12 mt-5 ">
-              <Image src={Wipro} width={70} height={70} />
-              <Image src={Mphasis} width={70} height={70} />
+              <Image src={Wipro} width={70} height={70} alt="image" />
+              <Image src={Mphasis} width={70} height={70} alt="image" />
             </div>
           </div>
         </div>
@@ -112,10 +125,16 @@ function Trainers() {
               Nischita Edigar
             </h5>
             <h6 className="text-center text-bold text-xl">Java Developer</h6>
-            <Image src={IqsLogo} width={150} height={150} className="mx-auto" />
+            <Image
+              src={IqsLogo}
+              width={150}
+              height={150}
+              className="mx-auto"
+              alt="image"
+            />
             <hr />
             <div className="flex justify-evenly space-evenly h-12 mt-5 ">
-              <Image src={IndiqSoft} width={70} height={70} />
+              <Image src={IndiqSoft} width={70} height={70} alt="image" />
             </div>
           </div>
         </div>

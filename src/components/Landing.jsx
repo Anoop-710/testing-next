@@ -92,7 +92,7 @@ function Landing() {
         className="sm:absolute right-[380px] bottom-[220px] -z-10 opacity-60"
         src={Register}
         width={500}
-        alt=""
+        alt="image"
       />
       <div className="mx-auto bg-regeal-blue max-w-8xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 bg-darkblue-700 border rounded-md mt-4">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto  sm:pl-16 ">

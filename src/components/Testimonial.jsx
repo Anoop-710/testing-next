@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import Hemant from "../../public/assets/Testimonials/Hemant.jpg";
 import Tanmay from "../../public/assets/Testimonials/Tanmay.jpg";
 import Sangita from "../../public/assets/Testimonials/Sangita.jpg";
@@ -145,6 +145,7 @@ function Testimonial() {
                             className="rounded-full border-2 border-indigo-500"
                             width={48}
                             height={48}
+                            alt="image"
                           />
                           <div>
                             <span className="block text-gray-800 font-semibold">
@@ -192,6 +193,7 @@ function Testimonial() {
                             className="rounded-full border-2 border-indigo-500"
                             width={48}
                             height={48}
+                            alt="image"
                           />
                           <div>
                             <span className="block text-gray-800 font-semibold">
@@ -239,6 +241,7 @@ function Testimonial() {
                             className="rounded-full border-2 border-indigo-500"
                             width={48}
                             height={48}
+                            alt="image"
                           />
                           <div>
                             <span className="block text-gray-800 font-semibold">

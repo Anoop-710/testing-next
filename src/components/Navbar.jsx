@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className="flex lg:flex-1 ">
             <Link href="/home" className="-m-1.5 p-1.5">
               {/* <span className="sr-only">Your Company</span> */}
-              <Image className="h-30 w-36" src={Logo} alt="" />
+              <Image className="h-30 w-36" src={Logo} alt="image" />
             </Link>
           </div>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <Image className="h-20 w-32" src={Logo} alt="" />
+                <Image className="h-20 w-32" src={Logo} alt="image" />
               </a>
               <button
                 type="button"

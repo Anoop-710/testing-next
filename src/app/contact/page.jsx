@@ -3,10 +3,6 @@ import { useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import img from "./image.png";
-import img1 from "./images.png";
-import img2 from "./yellow-question-mark.jpg";
-import img3 from "./qu.jpg";
 import img4 from "./question_marks_background.jpg";
 import { db } from "../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
@@ -156,11 +152,11 @@ export default () => {
   return (
     <>
       <Navbar />
-      {/* <Image src={img} className="absolute top-24 -z-10 w-screen" /> */}
-      {/* <Image src={img1} className="absolute top-24 -z-10 w-screen" /> */}
-      {/* <Image src={img2} className="absolute top-24 -z-10 w-screen" /> */}
-      {/* <Image src={img3} className="absolute top-24 -z-10 w-screen" /> */}
-      <Image src={img4} className="absolute top-24 -z-10 w-screen h-[160vh]" />
+      <Image
+        src={img4}
+        alt="image"
+        className="absolute top-24 -z-10 w-screen h-[160vh]"
+      />
       <section className="bg-gradient-to-r from-sky-600 to-blue-950 border rounded-2xl leading-relaxed max-w-screen-md mt-12 mx-auto px-4 md:px-8">
         <div className="space-y-3 text-center">
           <h1 className="text-3xl text-white font-bold pt-8">

@@ -99,7 +99,7 @@ function Footer() {
       <div class="sm:flex items-center max-w-screen-xl">
         <div class="sm:w-1/2 p-10">
           <div class="image object-center text-center" id="about">
-            <Image src={vectorLogo} />
+            <Image src={vectorLogo} alt="image" />
           </div>
         </div>
         <div class="sm:w-1/2 p-5">
@@ -226,7 +226,7 @@ function Footer() {
           </div>
           <div className="border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
             <p className="text-xs text-gray-400">
-              &copy; 2023 Your Company, Inc. All rights reserved.
+              &copy; 2023 IQSchool, Inc. All rights reserved.
             </p>
           </div>
         </div>

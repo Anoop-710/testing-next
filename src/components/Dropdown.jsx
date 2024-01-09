@@ -46,6 +46,7 @@ export default function Dropdown() {
                     src={Java}
                     className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                     aria-hidden="true"
+                    alt="image"
                   />
                   Java
                 </a>
@@ -64,6 +65,7 @@ export default function Dropdown() {
                     src={Python}
                     className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                     aria-hidden="true"
+                    alt="image"
                   />
                   Python
                 </a>
@@ -84,6 +86,7 @@ export default function Dropdown() {
                     src={DataScience}
                     className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                     aria-hidden="true"
+                    alt="image"
                   />
                   Data Science
                 </a>
@@ -102,6 +105,7 @@ export default function Dropdown() {
                     src={Devops}
                     className="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                     aria-hidden="true"
+                    alt="image"
                   />
                   DevOps
                 </a>
