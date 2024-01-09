@@ -4,22 +4,13 @@ import React, { useState } from "react";
 import { db } from "../app/firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 function Modal({ onDownload }) {
-  async function addDataToFirestore(
-    name,
-    email,
-    mobile,
-    qualification,
-    year,
-    course
-  ) {
+  async function addDataToFirestore(name, email, mobile, location) {
     try {
       const docRef = await addDoc(collection(db, "brochure"), {
         name: name,
         email: email,
         mobile: mobile,
-        qualification: qualification,
-        year: year,
-        course: course,
+        location: location,
       });
       console.log("Document written with ID: ", docRef.id);
       return true;
@@ -32,27 +23,16 @@ function Modal({ onDownload }) {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
-  const [qualification, setQualification] = useState("");
-  const [year, setYear] = useState("");
-  const [course, setCourse] = useState("");
+  const [location, setLocation] = useState("");
 
   const handleSubmit = async (e) => {
     // e.preventDefault();
-    const added = await addDataToFirestore(
-      fullname,
-      email,
-      mobile,
-      qualification,
-      year,
-      course
-    );
+    const added = await addDataToFirestore(fullname, email, mobile, location);
     if (added) {
       setFullname("");
       setEmail("");
       setMobile("");
-      setQualification("");
-      setYear("");
-      setCourse("");
+      setLocation("");
 
       alert("Your message has been sent successfully!");
     } else {
@@ -114,52 +94,15 @@ function Modal({ onDownload }) {
                     value={mobile}
                   />
 
-                  <label htmlFor="qualification"></label>
-                  <select
+                  <label htmlFor="location"></label>
+                  <input
                     className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400"
-                    id="qualification"
-                    onChange={(e) => setQualification(e.target.value)}
-                  >
-                    <option>SELECT QUALIFICATION</option>
-
-                    <option value="BE / B.Tech / MCA">BE / B.Tech / MCA</option>
-                    <option value="BCA, BSc, B.com, BBA">
-                      BCA, BSc, B.com, BBA
-                    </option>
-                    <option value="Others">Others</option>
-                  </select>
-
-                  <label htmlFor="year"></label>
-                  <select
-                    className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400"
-                    id="year"
-                    onChange={(e) => setYear(e.target.value)}
-                  >
-                    <option>SELECT YEAR OF PASSING</option>
-
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="Others">Others</option>
-                  </select>
-
-                  <label htmlFor="course"></label>
-                  <select
-                    className="border border-purple-400 mb-4 w-full p-2 rounded-md outline-purple-400"
-                    id="course"
-                    onChange={(e) => setCourse(e.target.value)}
-                  >
-                    <option>SELECT COURSE</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="MERN Stack">MERN Stack</option>
-                    <option value="Java">Java Programming</option>
-                    <option value="Python">Python Programming</option>
-                    <option value="Data Science">Data Science</option>
-                    <option value="Devops">Devops</option>
-                    <option value="Data Analytics">Data Analytics</option>
-                    <option value="Internship">Internship</option>
-                    <option value="Others"></option>
-                  </select>
+                    type="text"
+                    placeholder="Location"
+                    id="location"
+                    onChange={(e) => setLocation(e.target.value)}
+                    value={location}
+                  />
                   <Dialog.Close asChild>
                     <button
                       className="w-full px-3 py-2 rounded-md bg-indigo-600 text-white shadow-sm"
